@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>59E56435-711E-4F97-BBB0-BA894819350E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Quiz</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>934895ED8A8196C13F56AB0CAE38F6393AB539DF</key>
+		<string>https://github.com/OmriMeshulam/First-Simple-iOS-Quiz-Game.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Silver Challenge/Chapter 27/Quiz.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>934895ED8A8196C13F56AB0CAE38F6393AB539DF</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/OmriMeshulam/First-Simple-iOS-Quiz-Game.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>934895ED8A8196C13F56AB0CAE38F6393AB539DF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>934895ED8A8196C13F56AB0CAE38F6393AB539DF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>First-Simple-iOS-Quiz-Game</string>
+		</dict>
+	</array>
+</dict>
+</plist>

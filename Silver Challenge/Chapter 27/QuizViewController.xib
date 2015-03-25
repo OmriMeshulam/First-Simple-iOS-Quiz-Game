@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuizViewController">
+            <connections>
+                <outlet property="answerLabel" destination="Qo9-we-ns1" id="TDi-4l-Ha8"/>
+                <outlet property="questionLabel" destination="VBp-Kh-wwn" id="lRl-uf-4Jn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qo9-we-ns1">
+                    <rect key="frame" x="8" y="341" width="584" height="74"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="74" id="Qzm-ji-eUE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Qzm-ji-eUE"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Qzm-ji-eUE"/>
+                        </mask>
+                    </variation>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RU4-l7-3aR">
+                    <rect key="frame" x="240" y="103" width="120" height="30"/>
+                    <color key="backgroundColor" red="0.80885450664025593" green="1" blue="0.44889720456966664" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="RU4-l7-3aR" secondAttribute="height" multiplier="4:1" id="BRh-3b-9nt"/>
+                    </constraints>
+                    <state key="normal" title="Show Question">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="BRh-3b-9nt"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="BRh-3b-9nt"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="showQuestion:" destination="-1" eventType="touchDown" id="L4A-Ot-S5V"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HO5-yA-Plr">
+                    <rect key="frame" x="244" y="423" width="113" height="30"/>
+                    <color key="backgroundColor" red="0.80885450660000002" green="1" blue="0.44889720459999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="HO5-yA-Plr" secondAttribute="height" multiplier="113:30" id="xOX-gO-izq"/>
+                    </constraints>
+                    <state key="normal" title="Show Answer">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="xOX-gO-izq"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="xOX-gO-izq"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="showAnswer:" destination="-1" eventType="touchDown" id="xqo-ez-3ae"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBp-Kh-wwn">
+                    <rect key="frame" x="8" y="8" width="584" height="87"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="73" y="134" width="254" height="37"/>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="VBp-Kh-wwn" secondAttribute="centerX" id="0Ae-k9-1ZX"/>
+                <constraint firstItem="HO5-yA-Plr" firstAttribute="top" secondItem="Qo9-we-ns1" secondAttribute="bottom" constant="8" symbolic="YES" id="7DO-sk-yvI"/>
+                <constraint firstAttribute="centerX" secondItem="HO5-yA-Plr" secondAttribute="centerX" constant="-0.5" id="8fr-Oh-oFa"/>
+                <constraint firstItem="VBp-Kh-wwn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="134" id="C8w-pk-Ggo"/>
+                <constraint firstAttribute="centerX" secondItem="Qo9-we-ns1" secondAttribute="centerX" id="CEA-Fg-up2"/>
+                <constraint firstAttribute="centerX" secondItem="RU4-l7-3aR" secondAttribute="centerX" id="WqM-rO-Von"/>
+                <constraint firstItem="HO5-yA-Plr" firstAttribute="leading" secondItem="Qo9-we-ns1" secondAttribute="trailing" constant="-348" id="dPm-gO-HiW"/>
+                <constraint firstItem="Qo9-we-ns1" firstAttribute="top" secondItem="RU4-l7-3aR" secondAttribute="bottom" constant="94" id="mVv-sk-Ziw"/>
+                <constraint firstItem="Qo9-we-ns1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-92" id="nxg-4V-03D"/>
+                <constraint firstItem="Qo9-we-ns1" firstAttribute="leading" secondItem="RU4-l7-3aR" secondAttribute="trailing" constant="-352" id="rGE-D5-mUc"/>
+                <constraint firstItem="Qo9-we-ns1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="303" id="tea-re-dPR"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="0Ae-k9-1ZX"/>
+                    <exclude reference="C8w-pk-Ggo"/>
+                    <exclude reference="WqM-rO-Von"/>
+                    <exclude reference="CEA-Fg-up2"/>
+                    <exclude reference="mVv-sk-Ziw"/>
+                    <exclude reference="nxg-4V-03D"/>
+                    <exclude reference="rGE-D5-mUc"/>
+                    <exclude reference="tea-re-dPR"/>
+                    <exclude reference="7DO-sk-yvI"/>
+                    <exclude reference="8fr-Oh-oFa"/>
+                    <exclude reference="dPm-gO-HiW"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="constraints">
+                    <include reference="0Ae-k9-1ZX"/>
+                    <include reference="C8w-pk-Ggo"/>
+                    <include reference="WqM-rO-Von"/>
+                    <include reference="CEA-Fg-up2"/>
+                    <include reference="mVv-sk-Ziw"/>
+                    <include reference="nxg-4V-03D"/>
+                    <include reference="rGE-D5-mUc"/>
+                    <include reference="tea-re-dPR"/>
+                    <include reference="7DO-sk-yvI"/>
+                    <include reference="8fr-Oh-oFa"/>
+                    <include reference="dPm-gO-HiW"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="156" y="169"/>
+        </view>
+    </objects>
+</document>
